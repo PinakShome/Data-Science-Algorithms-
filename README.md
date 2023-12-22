@@ -1,23 +1,28 @@
-# Max-Stock-Profit-
-This Code is designed for analyzing algorithmic trading strategies using historical stock price data. It demonstrates data processing, algorithm implementation, and performance evaluation in a financial context.
 
-## KEY COMPONENTS
+## Data Science Algorithms
 
-- Data Preprocessing: The script starts by loading historical stock price data from CSV files. It cleans and formats this data, focusing mainly on the closing prices of various stock symbols. This step might include handling missing values, date formatting, and selecting relevant columns for analysis.
-  
-- Change Calculation: For each stock symbol, the script calculates the daily price changes. This could involve finding the difference in closing prices between consecutive days, which is crucial for identifying trends and potential buy/sell points.
-  
-- Max Profit Algorithm: The core of the script is an algorithm designed to analyze the price data and determine the optimal buy and sell dates for each stock. This algorithm aims to maximize profit by identifying the most favorable entry and exit points in the stock's price history.
-  
-- Stock Analysis for Multiple Companies: Extending beyond a single stock, the script applies its analysis to multiple companies. By comparing the calculated profits for different stocks, it identifies which company's stock would have been the most profitable over the analyzed period.
+## Overview
 
+This repository is a comprehensive collection of data science algorithms implemented in Python, focusing on practical applications in various scenarios. Each script within this repository demonstrates a specific algorithm, detailing its use case, implementation, and potential in solving real-world data problems.
 
-## Usage
+## Algorithms Overview
 
-- Data Requirement: The script requires historical stock price data in CSV format.
-- Running the Script: Execute the script in a Python environment. Ensure the CSV file paths are correctly set in the script.
-- Output: The script outputs the best stock to buy and sell based on the maximum profit calculation.
+## Small World Phenomenon
 
-## Customization
+Description: This script analyzes social network connections to test the small world phenomenon, often quoted as "six degrees of separation." It includes a function to load graph data from a file, a custom queue class, breadth-first search (BFS) algorithm implementation, and a function to compute the distribution of all distances within the graph.
 
-You can modify the script to analyze different stocks, adjust the algorithm, or experiment with other financial indicators.
+## Maximize Stock Profits
+Description: The algorithm implemented in this script processes stock market data to calculate the maximum potential profit from buying and selling stocks. It identifies the best days to buy and sell a specific stock, aiming to help in financial decision-making.
+
+## Portfolio Optimization
+
+Description: This script revolves around Portfolio Optimization using dynamic programming, akin to solving the 0/1 Knapsack problem. The script includes functions to load investment options from a file and optimize the allocation of funds across these investments to maximize return. It employs a 2D table for dynamic programming and includes a traceback table to identify the chosen investments. The task emphasizes a recursive approach to include or exclude each investment, considering the available funds and potential returns.
+
+To run these scripts, clone the repository and execute each Python file with the appropriate data files. Ensure you have the required dependencies installed, as specified in each script's comments.
+
+Dependencies
+
+Python 3.x
+pandas (for data manipulation)
+scikit-learn (for algorithmic implementations, if applicable)
+numpy (for numerical computations)
